@@ -6,8 +6,8 @@ The producer generates items and puts items onto the table. The consumer will pi
 
 ## How to Compile (Linux Terminal)
 
-$ gcc producer.c -pthread -lrt -o producer \n
-$ gcc consumer.c -pthread -lrt -o consumer \n
+$ gcc producer.c -pthread -lrt -o producer                                                                                                                 
+$ gcc consumer.c -pthread -lrt -o consumer                                                                                                                 
 $ ./producer & ./consumer &
 
 ### Examples
