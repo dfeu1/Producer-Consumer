@@ -29,7 +29,7 @@ int main() {
         // Check table is empty and check crit 
         sem_wait(empty);
         // sleep for a random time
-        sleep(rand()%2+1);
+        sleep(rand()% 2 + 1);
         sem_wait(mutex);
         
         // 0-50 random number inserted in buffer
