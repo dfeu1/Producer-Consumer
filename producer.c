@@ -37,7 +37,7 @@ int main() {
         sh->buffer[sh->in] = num;
 
         printf("produced %d [%d]\n", sh->buffer[sh->in], sh->in);
-        sh->in = (sh->in+1)%bSize; // 0 when max size
+        sh->in = (sh->in + 1) % bSize; // 0 when max size
 
         sem_post(mutex); // Lock
         sem_post(full);  // Decrement full s
