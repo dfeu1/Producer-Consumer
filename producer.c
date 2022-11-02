@@ -7,7 +7,8 @@
 #include "shared.h"
 
 int main() {
-
+    
+    int num = 0;
     time_t randVar;
     srand((unsigned) time(&randVar));
 
@@ -27,11 +28,13 @@ int main() {
     while(i--) {
         // Check table is empty and check crit 
         sem_wait(empty);
+        // sleep for a random time
         sleep(rand()%2+1);
         sem_wait(mutex);
         
-        // 0-100 random number inserted in buffer
-        sh->buffer[sh->in] = rand() % 100;
+        // 0-50 random number inserted in buffer
+        num = rand() % 50;
+        sh->buffer[sh->in] = num;
 
         printf("produced %d [%d]\n", sh->buffer[sh->in], sh->in);
         sh->in = (sh->in+1)%bSize; // 0 when max size
