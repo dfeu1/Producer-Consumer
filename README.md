@@ -12,7 +12,7 @@ $ ./producer & ./consumer &
 
 ### Examples
 
-Examples of the programming runnning are given as follows:
+Examples of the programming runnning are given as follows: (9 produces, 9 consumes)
 
 ```
 produced 43 [0]
