@@ -28,11 +28,11 @@ int main() {
     while(i--) {
         // Check table is full and check crit section
         sem_wait(full);
-        sleep(rand()%2+1);
+        sleep(rand()% 2 + 1);
         sem_wait(mutex);
         printf("consumed %d [%d]\n", sh->buffer[sh->out], sh->out);
 
-        sh->out = (sh->out+1)%bSize; // 0 when max size
+        sh->out = (sh->out + 1) % bSize; // 0 when max size
         
         sem_post(mutex); // Close
         sem_post(empty); // decrement empty s
