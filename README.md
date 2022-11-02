@@ -13,12 +13,47 @@ The producer generates items and puts items onto the table. The consumer will pi
 Examples of the programming runnning are given as follows:
 
 ```
-![image](https://user-images.githubusercontent.com/87754528/199389951-962dec63-22af-4b4e-b182-808e8741d830.png)
+produced 43 [0]
+produced 59 [1]
+consumed 43 [0]
+consumed 59 [1]
+produced 49 [0]
+consumed 49 [0]
+produced 67 [1]
+produced 65 [0]
+consumed 67 [1]
+produced 65 [1]
+consumed 65 [0]
+produced 92 [0]
+consumed 65 [1]
+consumed 92 [0]
+produced 50 [1]
+produced 76 [0]
+consumed 50 [1]
+consumed 76 [0]
+Finished, enter to exit.
 ```
 
-
 ```
-if needed example box
+produced 77 [0]
+produced 26 [1]
+consumed 77 [0]
+produced 71 [0]
+consumed 26 [1]
+produced 65 [1]
+consumed 71 [0]
+consumed 65 [1]
+produced 5 [0]
+produced 98 [1]
+consumed 5 [0]
+produced 70 [0]
+consumed 98 [1]
+consumed 70 [0]
+produced 19 [1]
+produced 46 [0]
+consumed 19 [1]
+consumed 46 [0]
+Finished, enter to exit.
 ```
 
 ## Authors
