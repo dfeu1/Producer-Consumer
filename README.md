@@ -13,7 +13,7 @@ The producer generates items and puts items onto the table. The consumer will pi
 Examples of the programming runnning are given as follows:
 
 ```
-coding example here...
+![image](https://user-images.githubusercontent.com/87754528/199389951-962dec63-22af-4b4e-b182-808e8741d830.png)
 ```
 
 
